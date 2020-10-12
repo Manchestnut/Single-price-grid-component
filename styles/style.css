@@ -1,6 +1,5 @@
 /**Variables**/
 /**Functions**/
-/**Breakpoints**/
 /**Global**/
 * {
   margin: 0;
@@ -21,6 +20,7 @@ body {
 /**Header**/
 header {
   padding: 30px 30px;
+  background: #e5eff5;
 }
 
 header h3 {
@@ -146,9 +146,21 @@ header p {
   }
 }
 
+@media (min-width: 1280px) {
+  body {
+    background: lightgrey;
+    -webkit-transform: scale(0.67);
+            transform: scale(0.67);
+  }
+}
+
 @media (min-width: 1440px) {
   body {
     font-size: 28px;
+    -webkit-transform: scale(0.67);
+            transform: scale(0.67);
+    width: 70%;
+    margin: 0 auto;
   }
   header,
   #box1-container,
