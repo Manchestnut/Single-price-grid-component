@@ -148,7 +148,7 @@ header p {
 
 @media (min-width: 1280px) {
   body {
-    background: lightgrey;
+    background: #e5eff5;
     -webkit-transform: scale(0.67);
             transform: scale(0.67);
   }
