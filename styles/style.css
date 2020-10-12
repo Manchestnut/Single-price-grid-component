@@ -10,17 +10,21 @@
 
 body {
   font-family: "Karla", sans-serif;
-  height: 95vh;
-  overflow: hidden;
+  height: 80%;
   font-size: 1rem;
   display: -ms-grid;
   display: grid;
+  background: #e5eff5;
+  width: 80%;
+  margin: 0 auto;
+  margin-block: 20%;
 }
 
 /**Header**/
 header {
   padding: 30px 30px;
   background: white;
+  border-radius: 10px 10px 0 0;
 }
 
 header h3 {
@@ -36,7 +40,7 @@ header .colored-text {
 
 header p {
   color: #98a6bd;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
 }
 
 /**Boxes**/
@@ -47,7 +51,7 @@ header p {
 }
 
 #box1-container #box1 {
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 #box1-container #box1 #second-line {
@@ -77,10 +81,10 @@ header p {
 #box1-container #box1 .button-container button {
   background: #c0df34;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   width: 100%;
-  height: 60px;
+  height: 45px;
   border-style: none;
   border-radius: 5px;
 }
@@ -94,6 +98,7 @@ header p {
   background: rgba(42, 178, 175, 0.795);
   color: #e5eff5;
   padding: 30px 30px;
+  border-radius: 0 0 10px 10px;
 }
 
 #box2-container #box2 h3 {
@@ -102,7 +107,7 @@ header p {
 
 #box2-container #box2 ul {
   list-style-type: none;
-  line-height: 1.3rem;
+  line-height: 1.2rem;
 }
 
 /**Media queries**/
@@ -111,7 +116,8 @@ header p {
     line-height: 2.5rem;
   }
   body {
-    font-size: 25px;
+    font-size: 20px;
+    margin-block: 100px;
   }
   header,
   #box1-container,
@@ -126,7 +132,7 @@ header p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 50px 50px;
+    padding: 40px 40px;
   }
   #box1-container,
   #box2-container {
@@ -137,6 +143,9 @@ header p {
     display: -ms-flexbox;
     display: flex;
   }
+  #box1-container {
+    border-radius: 0 0 0 10px;
+  }
   #box1-container #box1 .emphasize {
     font-weight: 700;
     font-size: 4rem;
@@ -144,11 +153,28 @@ header p {
   #box1-container #box1 #per-month {
     bottom: 16px;
   }
+  #box2-container {
+    background: rgba(42, 178, 175, 0.795);
+    color: #e5eff5;
+    padding: 30px 30px;
+    border-radius: 0 0 10px 0;
+  }
+  #box2-container #box2 h3 {
+    padding-bottom: 20px;
+  }
+  #box2-container #box2 ul {
+    list-style-type: none;
+  }
+  #box2-container #box2 ul li {
+    line-height: 1.8rem;
+  }
+  header {
+    border-radius: 10px 10px 0 0;
+  }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   body {
-    background: #e5eff5;
     -webkit-transform: scale(0.67);
             transform: scale(0.67);
   }
